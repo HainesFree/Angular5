@@ -37,11 +37,6 @@ function fn(age: number): void{
 ## 5.2 事件修饰符
 修饰事件发生的条件: (keyup.enter)="" 代表只能在enter键抬起时触发.
 ## 5.3 class类响应数据变化
-状态| 为真时的CSS类| 为假时的CSS类|
----|---|---|---|
-控件被访问过|ng-touched|ng-untouched
-控件的值变化了|ng-dirty|ng-pristine
-控件的值有效|ng-valid|ng-invalid
 * 状态	为真时的 CSS 类	为假时的 CSS 类
 * 控件被访问过	ng-touched	ng-untouched
 * 控件的值变化了	ng-dirty	ng-pristine
