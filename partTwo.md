@@ -90,7 +90,7 @@ myGroup: FormGroup;//指定类型为FormGroup
 function forbiddenNameValidator(nameReg: RegExp): ValidatorFn{
 return (control: AbstractControl): {[key: string]: any} =>{
 const forbidden = nameReg.test(control.value);
-return forbidden ? {'forbiddenName': {value: control.value}} : null;
+return forbidden `?` {'forbiddenName': {value: control.value}} : null;
 }
 }
 ```
