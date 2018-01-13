@@ -19,7 +19,7 @@
 * 定义变量:  `string` `number` `boolean` `Array` `enum` `any`
 * 定义变量: `let name: string = 'Tim'`
 * 定义方法: 
-```
+```python
 function fn(age: number): number{
   return 12;
   return '12';//报错
@@ -51,7 +51,7 @@ function fn(age: number): void{
 * 依赖`ReactiveFormsModule`
 * 添加`[formGroup]="myGroup"`
 * 修改 
-```
+```python
 <input type="text" 
 [(ngModel)]="user.name" 
 name="name" 
@@ -59,14 +59,14 @@ required
 minlength="4">
 ```
 为
-```
+```python
 <input type="text" 
 name="name" 
 formControlName="name">
 ```
 只留下一个`formControlName`
 * 在组件中创建FormGroup
-```
+```python
 myGroup: FormGroup;//指定类型为FormGroup
   
   ngOnInit() {
@@ -84,7 +84,7 @@ myGroup: FormGroup;//指定类型为FormGroup
 
 ```
 ## 5.7 自定义表单校验
-```
+```python
 function forbiddenNameValidator(nameReg: RegExp): ValidatorFn{
 return (control: AbstractControl): {[key: string]: any} =>{
 const forbidden = nameReg.test(control.value);
