@@ -37,10 +37,12 @@ function fn(age: number): void{
 ## 5.2 事件修饰符
 修饰事件发生的条件: (keyup.enter)="" 代表只能在enter键抬起时触发.
 ## 5.3 class类响应数据变化
-* 状态	为真时的 CSS 类	为假时的 CSS 类
-* 控件被访问过	ng-touched	ng-untouched
-* 控件的值变化了	ng-dirty	ng-pristine
-* 控件的值有效	ng-valid	ng-invalid
+| 状态为真时的     | CSS类为假时  |  CSS 类  |
+| --------   | -----:  | :----:  |
+| 控件被访问过     | ng-touched |  ng-untouched    |
+| 控件的值变化了      |   ng-dirty   |  ng-pristine   |
+| 控件的值有效        |   ng-valid    |   ng-invalid  |
+
 ## 5.4 模板校验
 > 在一个表单上添加双向数据绑定[(ngModel)] 和 #var ,然后两者联系起来 #var="ngModel".那么就可以通过模板变量获取校验信息.
 * `valid` `invalid` `dirty` `touched` `errors`
